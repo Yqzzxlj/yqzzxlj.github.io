@@ -45,7 +45,16 @@ $brand-color: #f0534e;
         }
       }
       .code {
-        padding: 0 10px;
+        white-space: pre-wrap;
+        width: 95%;
+        border-left: 6px solid #516363;
+        text-align: left;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .code {
+        width: 95%;
       }
     }
     .highlight {
