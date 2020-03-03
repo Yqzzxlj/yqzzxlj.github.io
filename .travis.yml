@@ -10,12 +10,15 @@ install:
   - npm install
 script:
   - hexo generate # generate static files
-deploy:
-  provider: pages
-  github-token: $GH_TOKEN
-  target-branch: master
-  on:
-    branch: dev 
-  local-dir: public
-  skip-cleanup: true
-  keep-history: true
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name $USERNAME
+  - git config user.email $USEREMAIL
+  - git add .
+  - git commit -m "Update Doc"
+  - git push -f "https://${GH_TOKEN}@${GH_REF}" dev:master
+
+env:
+  global:
+    - GH_REF: github.com/yqzzxlj/yqzzxlj.github.io.git
