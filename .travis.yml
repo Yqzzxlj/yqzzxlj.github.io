@@ -17,3 +17,5 @@ deploy:
   on:
     branch: dev 
   local-dir: public
+  skip-cleanup: true
+  keep-history: true
