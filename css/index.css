@@ -261,7 +261,13 @@ body {
           background-color: #f0f0f0;
           padding: 0 10px; }
       .article > .content pre .code, .article > .content .highlight .code {
-        padding: 0 10px; }
+        white-space: pre-wrap;
+        width: 95%;
+        border-left: 6px solid #516363;
+        text-align: left; }
+    @media (max-width: 650px) {
+      .article > .content .code {
+        width: 95%; } }
     .article > .content .highlight {
       margin-bottom: 15px; }
     .article > .content ul, .article > .content ol {
