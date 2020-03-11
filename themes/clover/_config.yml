@@ -29,7 +29,6 @@ menu:
   #   card: article-card
   Home: /
   Archive: /archives
-  Tag: /tags
   Category: /categories
 
 # Specific default categories or tags of home page.
