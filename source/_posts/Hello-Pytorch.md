@@ -1,7 +1,6 @@
 ---
 title: Hello Pytorch
 date: 2020-03-06 15:53:40
-tags: pytorch
 categories: pytorch学习笔记
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: CNN,RNN网络搭建学习
 date: 2020-03-08 11:15:45
-tags: pytorch
 categories: pytorch学习笔记
 ---
 

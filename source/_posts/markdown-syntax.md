@@ -1,7 +1,6 @@
 ---
 title: markdown syntax
 date: 2020-03-03 20:17:35
-tags: test
 ---
 
 ```js
