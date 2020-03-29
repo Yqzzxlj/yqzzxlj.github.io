@@ -5,10 +5,10 @@
 # Site
 title: Yqzzxlj
 subtitle: ''
-description: '专注于小辣椒的培养种植'
+description: '且行且珍惜'
 keywords:
 author: Yqzzxlj
-language: zh
+language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
@@ -93,7 +93,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme:  clover
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
