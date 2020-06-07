@@ -8,6 +8,7 @@ categories: pytorch学习笔记
 
 ## 解惑
 
+<!--more-->
 `torch.manual_seed(1)    # reproducible`
 这句代码的意思是这样的，因为网络的参数是随机初始化的，所以将seed固定可以保证每次的结果固定
 

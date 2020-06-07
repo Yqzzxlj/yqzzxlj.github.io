@@ -9,6 +9,7 @@ categories: pytorch学习笔记
 跟大佬学习用anaconda，创建虚拟环境，然后参照pytorch官网教程安装。
 遇到了torch和numpy版本冲突的问题，卸载numpy安一个合适的版本
 
+<!--more-->
 ## 简单使用Pytorch
 
 ``` python

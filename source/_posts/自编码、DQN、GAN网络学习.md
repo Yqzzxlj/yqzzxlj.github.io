@@ -8,6 +8,7 @@ categories: pytorch学习笔记
 
 这次学习了AutoEncode、DQN、GAN，均为经典网络。
 
+<!--more-->
 ## AutoEncode
 
 AutoEncode 可分为编码部分和解码部分，可以理解为先降维后还原来压缩数据的一种方式。

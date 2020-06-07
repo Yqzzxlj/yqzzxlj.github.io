@@ -10,6 +10,7 @@ categories: pytorch学习笔记
 
 ### torchvision是独立于pytorch的关于图像操作的一些方便工具库
 
+<!--more-->
 * vision.datasets : 几个常用视觉数据集，可以下载和加载，这里主要的高级用法就是可以看源码如何自己写自己的Dataset的子类
 * vision.models : 流行的模型，例如 AlexNet, VGG, ResNet 和 Densenet 以及 与训练好的参数。
 * vision.transforms : 常用的图像操作，例如：随机切割，旋转，数据类型转换，图像到tensor ,numpy 数组到tensor , tensor 到 图像等。
