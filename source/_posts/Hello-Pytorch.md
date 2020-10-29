@@ -1,7 +1,11 @@
 ---
 title: Hello Pytorch
 date: 2020-03-06 15:53:40
-categories: pytorch学习笔记
+categories: 
+    - 机器学习
+    - pytorch学习笔记
+top_img: 
+toc:
 ---
 
 ## 安装Pytorch
@@ -12,7 +16,9 @@ categories: pytorch学习笔记
 <!--more-->
 ## 简单使用Pytorch
 
-``` python
+`asdf`
+
+```python3
 // tensor 的使用
 torch.tensor(data, requires_grad=True)
 // 与numpy的array之间相互转换
