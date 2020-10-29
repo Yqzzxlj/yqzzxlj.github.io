@@ -2,7 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/10/29/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%EF%BC%88%E5%85%AD%EF%BC%89%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</loc>
+    
+    <lastmod>2020-10-29</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/10/29/butterfly%E4%B8%BB%E9%A2%98/</loc>
+    
+    <lastmod>2020-10-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/03/03/markdown-syntax/</loc>
+    
+    <lastmod>2020-10-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/10/29/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%B8%B8%E7%94%A8%E5%90%8D%E8%AF%8D/</loc>
+    
+    <lastmod>2020-10-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/10/29/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%EF%BC%88%E4%B8%80%EF%BC%89%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%92%8C%E4%BA%92%E8%81%94%E7%BD%91/</loc>
+    
+    <lastmod>2020-10-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/10/29/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%EF%BC%88%E4%BA%94%EF%BC%89%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/</loc>
     
     <lastmod>2020-10-29</lastmod>
     
@@ -16,7 +51,21 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2020/03/03/markdown-syntax/</loc>
+    <loc>http://yoursite.com/2020/10/29/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%EF%BC%88%E5%9B%9B%EF%BC%89%E7%BD%91%E7%BB%9C%E5%B1%82/</loc>
+    
+    <lastmod>2020-10-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/10/29/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%EF%BC%88%E4%B8%89%EF%BC%89%E8%BF%90%E8%BE%93%E5%B1%82/</loc>
+    
+    <lastmod>2020-10-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/10/29/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%EF%BC%88%E4%BA%8C%EF%BC%89%E5%BA%94%E7%94%A8%E5%B1%82/</loc>
     
     <lastmod>2020-10-29</lastmod>
     
@@ -45,10 +94,38 @@
   </url>
 
   
+  <url>
+    <loc>http://yoursite.com/tags/%E5%B8%B8%E7%94%A8%E5%90%8D%E8%AF%8D/</loc>
+    <lastmod>2020-10-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
+    <lastmod>2020-10-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
     <loc>http://yoursite.com/categories/%E8%AF%AD%E6%B3%95/</loc>
+    <lastmod>2020-10-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
+    <lastmod>2020-10-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2020-10-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
