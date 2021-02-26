@@ -4,56 +4,63 @@
   <url>
     <loc>http://yoursite.com/2020/10/29/butterfly%E4%B8%BB%E9%A2%98/</loc>
     
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-02-26</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/2020/03/05/hello-world/</loc>
     
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-02-26</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/2020/03/03/markdown-syntax/</loc>
     
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-02-26</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/2021/01/02/C++/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/</loc>
     
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-02-26</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2021/02/26/C++/C++%E7%9F%A5%E8%AF%86%E7%82%B9%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/</loc>
+    
+    <lastmod>2021-02-26</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/categories/index.html</loc>
     
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-02-26</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/link/index.html</loc>
     
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-02-26</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/tags/index.html</loc>
     
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-02-26</lastmod>
     
   </url>
   
 
   <url>
     <loc>http://yoursite.com/</loc>
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-02-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -61,14 +68,21 @@
   
   <url>
     <loc>http://yoursite.com/tags/c/</loc>
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-02-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite.com/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/</loc>
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-02-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
+    <lastmod>2021-02-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -77,21 +91,21 @@
   
   <url>
     <loc>http://yoursite.com/categories/%E8%AF%AD%E6%B3%95/</loc>
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-02-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-02-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/c/</loc>
-    <lastmod>2021-01-02</lastmod>
+    <lastmod>2021-02-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
