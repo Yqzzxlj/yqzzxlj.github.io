@@ -603,7 +603,7 @@ subtitle:
   # 開頭不允許轉義字元，如需要，請把整個句子用雙引號包住
   # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
   sub: 
-    - 剑之所指&#44心之所向
+    - 正在xui懒觉
 
 # Loading Animation (加載動畫)
 preloader: false
@@ -622,7 +622,7 @@ aside:
     description:
     button: 
       icon: 
-      text: 欢迎大佬来玩
+      text: 么么哒
       link: 
   card_announcement:
     enable: false
