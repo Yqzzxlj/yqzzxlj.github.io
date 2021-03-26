@@ -297,6 +297,83 @@ for (delaration : expression) {
 + =delete表示该函数不能被调用
 + =default表示编译器默认生成的函数
 
+#### 1.9 enable_shared_from_this
+
+ 当类A被share_ptr管理，且在类A的成员函数里需要把当前类对象作为参数传给其他函数时，就需要传递一个指向自身的share_ptr。
+
+##### 为什么不直接传递this指针
+
+使用智能指针的初衷就是为了方便资源管理，如果在某些地方使用智能指针，某些地方使用原始指针，很容易破坏智能指针的语义，从而产生各种错误。
+
+##### 可以直接传递shared_ptr<this>吗
+
+不能，因为这样会造成2个非共享的shared_ptr指向同一个对象，未增加引用计数导致对象被析构两次。
+
+```c++
+#include <memory>
+#include <iostream>
+ 
+class Bad
+{
+public:
+	std::shared_ptr<Bad> getptr() {
+		return std::shared_ptr<Bad>(this);
+	}
+	~Bad() { std::cout << "Bad::~Bad() called" << std::endl; }
+};
+ 
+int main()
+{
+	// 错误的示例，每个shared_ptr都认为自己是对象仅有的所有者
+	std::shared_ptr<Bad> bp1(new Bad());
+	std::shared_ptr<Bad> bp2 = bp1->getptr();
+	// 打印bp1和bp2的引用计数
+	std::cout << "bp1.use_count() = " << bp1.use_count() << std::endl;
+	std::cout << "bp2.use_count() = " << bp2.use_count() << std::endl;
+}
+
+```
+
+正确的实现：
+
+```c++
+#include <memory>
+#include <iostream>
+ 
+struct Good : std::enable_shared_from_this<Good> // 注意：继承
+{
+public:
+	std::shared_ptr<Good> getptr() {
+		return shared_from_this();
+	}
+	~Good() { std::cout << "Good::~Good() called" << std::endl; }
+};
+ 
+int main()
+{
+	// 大括号用于限制作用域，这样智能指针就能在system("pause")之前析构
+	{
+		std::shared_ptr<Good> gp1(new Good());
+		std::shared_ptr<Good> gp2 = gp1->getptr();
+		// 打印gp1和gp2的引用计数
+		std::cout << "gp1.use_count() = " << gp1.use_count() << std::endl;
+		std::cout << "gp2.use_count() = " << gp2.use_count() << std::endl;
+	}
+	system("pause");
+}
+```
+
+##### 为什么会出现这种场合
+
+因为在异步调用中，存在一个保活机制，异步函数执行的时间点我们是无法确定的，然而异步函数可能会使用到异步调用之前就存在的变量。为了保证该
+变量在异步函数执行期间一直有效，我们可以传递一个自身的share_ptr给异步函数，这样在异步函数执行期间share_ptr所管理的对象就不会析构，所使用
+的变量也会一直有效了（保活）。
+
+#### 1.10 静态库和动态库
++ 静态库在程序编译时会被链接到目标代码中，程序运行时不再需要静态库；
++ 动态库在程序编译时，不会放到链接的目标代码中，而是在程序运行时被载入，因此在程序运行时还需要动态库的存在。
++ 当多进程共享同一个动态库时，在栈区和堆区的中间有共享库的内存映射区域。不同进程之间共享代码，不共享数据。
+
 ### 2. C和C++的区别
 
 + 面向过程：分析解决分析需要的步骤，并用函数将这些步骤实现。
@@ -409,6 +486,15 @@ static用来修饰静态变量和静态函数
 + 保持变量内容持久：static修饰局部变量时，改变了其声明周期，使得该变量存在于定义后知道程序结束运行的时间内。
 + 隐藏：static修饰全局变量和函数时，改变了全局变量和函数的作用域，使得全局变量和函数只能在定义它的文件中使用。
 + static作用于类的成员变量和成员函数时，使得类变量或者类成员函数和类有关。不用定义类的对象就可以通过类访问这些静态成员。注意类的静态成员函数中只能访问静态成员变量和静态成员函数，不能将类的静态成员函数定义为虚函数。继承时父类子类的static变量是同一个。
+
+#### 能不能在头文件中声明static变量
+可以，一般来说，静态全局变量只应该定义在实现文件中，但有时由于一些特殊的目的，也可能定义在头文件中。比如在有些标准库的实现中，就用这种方法来初始化标准流cin, cout，或者在在tr1库中，也用这种方法来定义占位符。每一个包含该头文件的实现文件中都拥有该变量的一份拷贝，这些变量放在运行体的data段或者bss段。
+
+如果有两个cpp文件声明了同名的全局静态变量，那么他们实际上是独立的两个变量；
+
+如果在一个头文件中声明：
+`static int g_vaule = 0;`
+那么会为每个包含该头文件的cpp都创建一个全局变量，但他们都是独立的；所以也不建议这样的写法，一样不明确需要怎样使用这个变量，因为只是创建了一组同名而不同作用域的变量。
 
 ### 4. static在类中的使用
 
